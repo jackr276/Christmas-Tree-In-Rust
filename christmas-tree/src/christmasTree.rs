@@ -5,6 +5,7 @@
  * the terminal 
 */
 
+use colored::*;
 
 fn main() {
     println!("\n                    Merry Christmas!!\n");
@@ -14,7 +15,7 @@ fn main() {
 
 fn christmas_tree(){
     for n in (0..27).rev(){
-        println!("{}{}{}{}{}", " ".repeat(n), "*", "/".repeat(27-n), "\\".repeat(27-n), "*");
+        println!("{}{}{}{}{}", " ".repeat(n), "*".yellow(), "/".repeat(27-n).green(), "\\".repeat(27-n).green(), "*".yellow());
         //Add the spaces needed before the n
     }
 }
