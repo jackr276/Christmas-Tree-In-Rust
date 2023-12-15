@@ -7,16 +7,14 @@
 
 
 fn main() {
-    println!("                           *                          ");
-
-    christmas_tree()
+    println!("\n                    Merry Christmas!!\n");
+    christmas_tree();
+    println!();
 }
 
-
-
-
 fn christmas_tree(){
-    for n in 1..20{
-        println!("{}",n)
+    for n in (0..27).rev(){
+        println!("{}{}{}{}{}", " ".repeat(n), "*", "/".repeat(27-n), "\\".repeat(27-n), "*");
+        //Add the spaces needed before the n
     }
 }
